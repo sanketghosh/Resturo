@@ -1,0 +1,55 @@
+.sidebar {
+  background-color: var(--white);
+  flex: 1.5;
+  margin-left: 15px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 7px;
+  box-shadow: 2px 2px 3px var(--shadow);
+  padding: 10px;
+  .sidebarWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 15px;
+    .logoContainer {
+      width: 100%;
+      padding-bottom: 15px;
+      border-bottom: 1px solid var(--indigoExtraLight);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .menuItemContainer {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      gap: 15px;
+      margin-top: 20px;
+      .singleMenuItem {
+        display: flex;
+        color: var(--indigo);
+        align-items: center;
+        justify-content: start;
+        gap: 10px;
+        border-radius: 30px;
+        padding: 15px;
+        cursor: pointer;
+        transition: 0.4s;
+        .singleMenuLogo {
+          font-size: 19px;
+        }
+        .singleMenuText {
+          font-size: 16px;
+          font-weight: 500;
+        }
+      }
+      .singleMenuItem:hover {
+        color: var(--white);
+        background-color: var(--indigoDark);
+      }
+    }
+  }
+}

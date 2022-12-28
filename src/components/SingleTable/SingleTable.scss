@@ -1,0 +1,35 @@
+.availableTable,
+.occupiedTable {
+  height: 70px;
+  background-color: var(--indigo);
+  width: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  flex-direction: column;
+  text-transform: capitalize;
+  gap: 10px;
+  cursor: pointer;
+  color: var(--white);
+  box-shadow: 2px 2px 3px var(--shadow);
+  border-radius: 5px;
+  transition: 0.4s;
+  .tableNumber {
+    font-size: 18px;
+    font-weight: 600;
+  }
+  .tableStatus {
+    font-size: 13px;
+    font-weight: 500;
+  }
+}
+
+.availableTable:hover {
+  background: var(--indigoDark);
+}
+
+.occupiedTable {
+  background-color: var(--indigoExtraLight);
+  box-shadow: 2px 2px 3px var(--shadow);
+}
